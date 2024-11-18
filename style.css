@@ -113,11 +113,9 @@ main {
   cursor: pointer;
   font-weight: 400;
   transition: all 0.2s;
-
   background-color: white;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
-
   padding: 0.7rem 2.5rem;
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
@@ -168,4 +166,92 @@ main {
 
 .hidden {
   display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  main {
+    width: 90rem;
+    height: 55rem;
+  }
+  
+  .player {
+    padding: 7rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+  
+  main {
+    width: 80rem;
+    height: 50rem;
+  }
+  
+  .player {
+    padding: 6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    width: 95%;
+    height: 90vh;
+    flex-direction: column;
+  }
+  
+  .player {
+    flex: none;
+    padding: 4rem;
+  }
+  
+  .btn--roll {
+    top: 85%;
+  }
+  
+  .btn--hold {
+    top: 92%;
+  }
+  
+  .dice {
+    top: 45%;
+  }
+  
+  .name {
+    font-size: 3rem;
+  }
+  
+  .score {
+    font-size: 6rem;
+  }
+  
+  .current {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+  
+  .player {
+    padding: 3rem;
+  }
+  
+  .btn {
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  main {
+    height: 95vh;
+  }
+  
+  .player {
+    padding: 3rem;
+  }
 }
